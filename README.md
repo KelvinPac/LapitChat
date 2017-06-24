@@ -3,6 +3,8 @@
 This sample demonstrates how to automatically generate thumbnails for each profile images that are uploaded to Firebase Storage for `LapitChat App` [LapitChat App](https://www.youtube.com/playlist?list=PLGCjwl1RrtcQ3o2jmZtwu2wXEA4OIIq53)
 
 
+![alt tag](https://github.com/KelvinPac/LapitChat/blob/master/Screenshot_20170624_185010.png "Image One")
+
 ## Functions Code
 
 See file [functions/index.js](functions/index.js) for the thumbnail generation code.
