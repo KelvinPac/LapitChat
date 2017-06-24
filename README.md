@@ -1,6 +1,6 @@
 # Automatically Generate Thumbnails
 
-This sample demonstrates how to automatically generate thumbnails for each images that are uploaded to Firebase Storage.
+This sample demonstrates how to automatically generate thumbnails for each profile images that are uploaded to Firebase Storage for `LapitChat App` [LapitChat App](https://www.youtube.com/playlist?list=PLGCjwl1RrtcQ3o2jmZtwu2wXEA4OIIq53)
 
 
 ## Functions Code
@@ -30,7 +30,7 @@ To deploy and test the sample:
  - Install dependencies in the functions directory: `cd functions; npm install; cd -`
  - Go to the Firebase Console, select the gear image > **project settings** > **Service Accounts** and click *Generate New Private Key** to download a Service Account Key JSON document.
  - Add the JSON document to the **Functions** directory.
- - Replace `[InsertServiceAccountKey.json]` with the name of the Service Account JSON document.
+ - Replace `cloud-functions-f199c-firebase-adminsdk-vn436-1699cb8c56.json` with the name of the Service Account JSON document.
  - Deploy your project using `firebase deploy`
- - Go to the Firebase Console **Storage** tab and upload an image. After a short time an thumbnail image with the same name but a `thumb_` prefix will be created in the same folder (make sure you refresh the UI to see the new file).
- - Go to the Firebase Console **Database** tab and see that a child of `images` has been created contiaining the Signed URLs for both images.
+ - Go to the Firebase Console **Storage** tab and Create a profile_images folder then upload an image in the folder. After a short time an thumbnail image with the same name but a `thumb_` prefix will be created in the same folder (make sure you refresh the UI to see the new file).
+ - Go to the Firebase Console **Database** tab and child `Users` then child `{user_uid}` and the image and thumb_image has been updated contiaining the Signed URLs for both images.
